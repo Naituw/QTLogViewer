@@ -1,12 +1,10 @@
-# Qtlog-viewer
+# QTLogViewer
 
-This README outlines the details of collaborating on this Ember application.
-
-A short introduction of this app could easily go here.
+WBQueueTests log 查看器
 
 ## Prerequisites
 
-You will need the following things properly installed on your computer.
+你需要在你的电脑上安装以下工具软件
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM) and [Bower](http://bower.io/)
@@ -23,10 +21,6 @@ You will need the following things properly installed on your computer.
 * `ember server`
 * Visit your app at http://localhost:4200.
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
 ### Running Tests
 
 * `ember test`
@@ -37,9 +31,15 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+### Deploying & Packaging
 
-Specify what it takes to deploy your app.
+完成 build 后，我们可以将应用打包成 Chrome Packaged App：
+
+1. 进入 Chrome 的扩展程序界面 (`chrome://extensions/`)
+2. 打开 `开发者模式`
+3. `加载正在开发的扩展程序...` 或 `打包扩展程序...`
+4. 选择该项目的 `dist` 文件夹作为根目录
+5. 完成
 
 ## Further Reading / Useful Links
 
