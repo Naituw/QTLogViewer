@@ -1,0 +1,12 @@
+<div class="log-file-info">
+	<h3>{{model.case}}</h3>
+	<h4>uid: {{model.uid}}</h4>
+	<h4>ua: {{model.ua}}</h4>
+	<h4>result: {{model.result}}</h4>
+</div>
+
+<div class="log-container">
+{{#each model.logs}}
+	{{log-item log=this}}
+{{/each}}
+</div>

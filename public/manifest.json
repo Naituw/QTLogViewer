@@ -1,0 +1,31 @@
+{
+	// Required
+	"app": {
+		"background": {
+			"scripts": ["chrome_app_delegate.cjs"]
+		}
+	},
+	"manifest_version": 2,
+	"name": "QTLogViewer",
+	"version": "0.1",
+
+	// Recommended
+	// "default_locale": "zh-CN",
+	"description": "Viewer for Weibo Queue Tests Log",
+
+	// Optional
+	"file_handlers": {
+		"any": {
+			"extensions": [
+				"qtlog"
+			],
+			"types": [
+				"*"
+			]
+		}
+	},
+
+	"permissions": [
+		"fileSystem" // required by file_handlers
+	]
+}
