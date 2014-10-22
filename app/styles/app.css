@@ -50,6 +50,7 @@ html, body {
     padding-top: 10px;
     font-size: 14px;
     color:#555;
+    -webkit-user-select: text;
 }
 
 .log-container .log.warning {
@@ -62,6 +63,10 @@ html, body {
 
 .log-container .log.error .log-description {
     color: #8C1D0E;
+}
+
+.log-container .log > .log-other pre {
+    -webkit-user-select: text;
 }
 
 .drop-bootstrap {

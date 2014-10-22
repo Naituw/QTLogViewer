@@ -1,4 +1,4 @@
-<div {{bind-attr class=":log levelClass"}} {{action 'toggle'}}>
+<div {{bind-attr class=":log levelClass"}} {{action 'toggle' on='click'}}>
 	<div class="log-name">{{log.name}}</div>
 	<div class="log-date">{{log.date_string}}</div>
 	{{#if derivedDescription}}<div class="log-description">{{derivedDescription}}</div>{{/if}}
